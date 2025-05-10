@@ -1,0 +1,62 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background: #222;
+    font-family: sans-serif;
+    height: 100vh;
+  }
+  
+  .guitar-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .neck {
+    display: flex;
+    flex-direction: column;
+    background: #444;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 20px;
+    position: relative;
+  }
+  
+  .fret {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #666;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+    box-shadow: 0 0 0 transparent;
+    border: 4px solid white;
+  }
+  
+  .fret.active {
+    transform: scale(1.2);
+    box-shadow: 0 0 15px white;
+  }
+  
+  .fret-1 { background: red; }
+  .fret-2 { background: yellow; }
+  .fret-3 { background: green; }
+  .fret-4 { background: blue; }
+  .fret-5 { background: orange; }
+
+
+  .falling-note {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    z-index: 2;
+  }
+  
+  
